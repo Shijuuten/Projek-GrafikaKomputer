@@ -1,0 +1,21 @@
+﻿  Application.cpp
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(364,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(370,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(375,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(381,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(387,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(437,30): warning C4305: 'argument': truncation from 'double' to 'float'
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(461,9): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(462,11): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(493,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(494,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(498,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(499,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(500,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\FinalProject\Application.cpp(501,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  1 of 324 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  FinalProject.vcxproj -> E:\tugas\Grafkom\Voxel-Like\Voxel-Like\FinalProject\Release\FinalProject.exe
