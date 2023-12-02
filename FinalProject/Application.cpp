@@ -19,7 +19,7 @@ void Application::setupPerspective()
 void Application::setupCamera()
 {
 	// LookAt camera (position, target/direction, up)
-	viewPos = glm::vec3(4, 1, 3);
+	viewPos = glm::vec3(-1, 2, 2);
 	glm::mat4 view = glm::lookAt(viewPos, glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));
 	shader->setMat4("view", view);
 }
@@ -27,7 +27,7 @@ void Application::setupCamera()
 void Application::setupLighting()
 {
 	// set lighting attributes
-	glm::vec3 lightPos = glm::vec3( 4, 4, 0);
+	glm::vec3 lightPos = glm::vec3( -5, 4, 5);
 	shader->setVec3("lightPos", lightPos);
 	shader->setVec3("viewPos", viewPos);
 	glm::vec3 lightColor = glm::vec3(1.0f, 1.0f, 1.0f);
@@ -90,6 +90,71 @@ void Application::Render()
 		cube->SetScale(0.03f, 2.5f, 1.15f);
 		cube->Draw();
 	}
+	for (int i = 0; i < 5; i++) {
+		//sensor urinoir
+
+		cube->SetColor(37.0f, 37.0f, 38.0f);
+		cube->SetPosition(-1.14f, 1.4f, 3.75f + i * 1.5);
+		cube->SetScale(0.05f, 0.3f, 0.2f);
+		cube->Draw();
+
+		//Urinoir
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.14f, 0.5f, 3.75f + i * 1.5);
+		cube->SetScale(0.05f, 1.2f, 0.8f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.38f, 0.5f, 3.35f + i * 1.5);
+		cube->SetScale(0.5f, 1.2f, 0.05f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.38f, 0.5f, 4.15f + i * 1.5);
+		cube->SetScale(0.5f, 1.2f, 0.05f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.38f, 1.1f, 3.75f + i * 1.5);
+		cube->SetScale(0.5f, 0.05f, 0.8f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.38f, -0.1f, 3.75f + i * 1.5);
+		cube->SetScale(0.5f, 0.05f, 0.8f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.65f, 0.0f, 3.5f + i * 1.5);
+		cube->SetScale(0.05f, 0.25f, 0.30f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.65f, 0.0f, 4.0f + i * 1.5);
+		cube->SetScale(0.05f, 0.25f, 0.30f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.6f, -0.1f, 3.75f + i * 1.5);
+		cube->SetScale(0.5f, 0.05f, 0.2f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.75f, 0.0f, 3.67f + i * 1.5);
+		cube->SetScale(0.2f, 0.25f, 0.05f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.75f, 0.0f, 3.85f + i * 1.5);
+		cube->SetScale(0.2f, 0.25f, 0.05f);
+		cube->Draw();
+
+		cube->SetColor(224.0f, 224.0f, 224.0f);
+		cube->SetPosition(-1.85f, 0.0f, 3.75f + i * 1.5);
+		cube->SetScale(0.05f, 0.25f, 0.2f);
+		cube->Draw();
+	}
+
 
 	for (int i = 0; i < 5; i++) {
 		//Pembatas wc
@@ -143,6 +208,11 @@ void Application::Render()
 	cube->SetScale(0.03f, 2.5f, 0.4f);
 	cube->Draw();
 
+	//Atap
+	cube->SetColor(216.0f, 186.0f, 137.0f);
+	cube->SetPosition(-3.5f, 4.2f, 5.0f);
+	cube->SetScale(8.0f, 0.2f, 10.9f);
+	cube->Draw();
 
 	//TembokX
 	cube->SetColor(216.0f, 186.0f, 137.0f);
@@ -156,7 +226,7 @@ void Application::Render()
 	cube->Draw();
 	//TembokX
 	cube->SetColor(216.0f, 186.0f, 137.0f);
-	cube->SetPosition(-4.18f, 1.7f, 9.8f);
+	cube->SetPosition(-4.18f, 1.7f, 10.3f);
 	cube->SetScale(6.5f, 5.0f, 0.2f);
 	cube->Draw();
 	//TembokY
@@ -172,8 +242,8 @@ void Application::Render()
 	//TembokY
 	for (int i = 0; i < 5; i++) {
 		cube->SetColor(216.0f, 186.0f, 137.0f);
-		cube->SetPosition(-7.5f, 1.7f, 0.6f + i * 2);
-		cube->SetScale(0.2f, 5.0f, 2.4f);
+		cube->SetPosition(-7.5f, 1.7f, 0.7f + i * 2);
+		cube->SetScale(0.2f, 5.0f, 3.0f);
 		cube->Draw();
 	}
 
@@ -227,7 +297,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(214.0f, 181.0f, 117.0f);
 		cube->SetPosition(-7.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -239,7 +309,7 @@ void Application::Render()
 		cube->Draw();
 	}
 
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(94.0f, 62.0f, 23.0f);
 		cube->SetPosition(-6.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -250,7 +320,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(214.0f, 181.0f, 117.0f);
 		cube->SetPosition(-5.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -261,7 +331,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(94.0f, 62.0f, 23.0f);
 		cube->SetPosition(-4.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -272,7 +342,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(214.0f, 181.0f, 117.0f);
 		cube->SetPosition(-3.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -283,7 +353,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(94.0f, 62.0f, 23.0f);
 		cube->SetPosition(-2.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);
@@ -294,7 +364,7 @@ void Application::Render()
 		cube->SetScale(1.0f, 0.1f, 1.0f);
 		cube->Draw();
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 4; i++) {
 		cube->SetColor(214.0f, 181.0f, 117.0f);
 		cube->SetPosition(-1.0f, -0.7f, 4.1f + i * 2);
 		cube->SetScale(1.0f, 0.1f, 1.0f);

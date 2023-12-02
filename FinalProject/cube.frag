@@ -12,10 +12,10 @@ uniform vec3 lightColor;
 void main()
 {
     // ambient
-    float Ka = 0.5;
+    float Ka = 0.4;
     vec3 ambient = Ka * lightColor * objectColor;
     // diffuse 
-	float Kd = 0.9;
+	float Kd = 0.8;
     vec3 norm = normalize(Normal);
     vec3 lightDir = normalize(lightPos - FragPos);
     float diff = Kd * max(dot(norm, lightDir), 0.0);
