@@ -77,6 +77,48 @@ void Application::Render()
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	glEnable(GL_DEPTH_TEST);
+	
+	//Pintu wc utama
+	cube->SetColor(30.0f, 30.0f, 30.0f);
+	cube->SetPosition(0.3f, 0.65f, 3.0f);
+	cube->SetScale(0.1f, 2.6f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(30.0f, 30.0f, 30.0f);
+	cube->SetPosition(-1.0f, 0.65f, 3.0f);
+	cube->SetScale(0.1f, 2.6f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(30.0f, 30.0f, 30.0f);
+	cube->SetPosition(-0.35f, 2.0f, 3.0f);
+	cube->SetScale(1.4f, 0.1f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(63.0f, 40.0f, 21.0f);
+	cube->SetPosition(-0.35f, 0.65f, 3.0f);
+	cube->SetScale(1.2f, 2.6f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(104.0f, 67.0f, 36.0f);
+	cube->SetPosition(-0.65f, 0.65f, 2.95f);
+	cube->SetScale(0.4f, 2.6f, 0.02f);
+	cube->Draw();
+
+	cube->SetColor(224.0f, 224.0f, 224.0f);
+	cube->SetPosition(-0.70f, 1.175f, 2.9f);
+	cube->SetScale(0.05f, 0.05f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(224.0f, 224.0f, 224.0f);
+	cube->SetPosition(-0.70f, 0.435f, 2.9f);
+	cube->SetScale(0.05f, 0.05f, 0.1f);
+	cube->Draw();
+
+	cube->SetColor(224.0f, 224.0f, 224.0f);
+	cube->SetPosition(-0.70f, 0.8f, 2.85f);
+	cube->SetScale(0.05f, 0.8f, 0.05f);
+	cube->Draw();
+
 	//Pintu WC Buka
 	cube->SetColor(37.0f, 37.0f, 38.0f);
 	cube->SetPosition(-5.24f, 0.8f, 1.36f);
